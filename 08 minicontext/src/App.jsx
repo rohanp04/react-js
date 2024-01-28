@@ -1,14 +1,17 @@
-/* eslint-disable no-unused-vars */
-import { useState } from 'react'
+import Login from "./components/Login"
+import Profile from "./components/Profile"
+import UsercontextProvider from "./context/UsercontextProvider"
 import './App.css'
 
 function App() {
   
 
   return (
-    <>
-    <h1></h1>
-    </>
+    <UsercontextProvider>
+      <h1>Hello this is React context Project</h1>
+      <Login />
+      <Profile />
+    </UsercontextProvider>
   )
 }
 
